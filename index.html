@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bola de Oráculo Mágico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>El Oráculo Mágico</h1>
+        <p>Piensa en una pregunta de "Sí" o "No", escríbela y sacude tu celular (o haz clic en la bola).</p>
+        
+        <div class="input-container">
+    <input type="text" id="question-input" placeholder="¿Aprobaré el examen?..." autocomplete="off">
+    <button id="mic-btn" title="Dictar pregunta">🎤</button>
+</div>
+        
+        <div class="ball-container">
+            <div id="magic-ball" class="ball">
+                <div class="window">
+                    <div id="triangle" class="triangle">
+                        <span id="answer-text">8</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="permission-btn" style="display: none;">Activar sensor de movimiento</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
